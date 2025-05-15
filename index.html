@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations & JavaScript Demo</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link to external JavaScript file -->
+    <script src="script.js" defer></script>
+    <!-- Google Font for typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://www.pexels.com/favicon.ico">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">MySite</div>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-toggle-label">☰</label>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Interactive Section -->
+    <main>
+        <section class="interactive">
+            <h1 id="main-title">CSS & JavaScript Animation Playground</h1>
+            <p id="welcome-text">Welcome! Try the buttons below.</p>
+
+            <!-- Theme Toggle and Modal Trigger -->
+            <div class="controls">
+                <button id="theme-toggle" class="animated-button">Toggle Theme</button>
+                <button id="open-modal" class="animated-button">Open Modal</button>
+            </div>
+
+            <!-- Username Form for localStorage -->
+            <div class="username-form">
+                <form id="username-form">
+                    <label for="username">Your Name:</label>
+                    <input type="text" id="username" placeholder="Enter your name">
+                    <button type="submit">Save Name</button>
+                </form>
+            </div>
+
+            <!-- Modal -->
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span id="close-modal" class="close">&times;</span>
+                    <h2>Animated Modal</h2>
+                    <p>This modal appears with a smooth scale-up animation!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 CSS & JavaScript Demo. All rights reserved.</p>
+    </footer>
+</body>
+</html>
